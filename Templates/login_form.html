@@ -171,12 +171,18 @@
           <h1>
             Sign In
           </h1>
-          {% if error %}
+          {% if error  %}
            <p class="error"><strong>Error:</strong> {{ error }}
           {% endif %}
+
+          {% if loginError  %}
+           <p class="error"><strong>Error:</strong>   {{ loginError }}
+          {% endif %}
+
+
         </div>
         <div class='control block-cube block-input'>
-          <input name='email' placeholder='Email Address' type='text'>
+          <input name='username' placeholder='Email Address' type='text'>
           <div class='bg-top'>
             <div class='bg-inner'></div>
           </div>
